@@ -1,0 +1,202 @@
+/*************************Контакты-footer***************************/
+.footer{
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: baseline;
+
+    .footer-container{   
+        display: flex; 
+
+        .footer-center {
+            padding-top: 12px;
+            padding-right: 94px;
+        }
+        .footer-right {
+            margin-top: 12px;
+            width: 570px;
+            height: 86px;
+            margin-left: auto;
+        }
+    }
+ 
+}
+
+.footer-left {
+    .logo-footer{
+        padding-bottom: 20px;
+        .logo-color-blue,
+        .logo-color 
+         {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            color: $accent-color;
+        }
+
+        .logo-color {
+            // @extend %footer-color
+            color: $title-dark-theme-color;
+        }
+
+    }
+    .address-list  {
+        margin-right: 69px;
+        width: 231px;
+        height: 81px;
+    }
+}
+
+
+.footer-address,
+.footer-email,
+.footer-tel 
+{
+    // @extend  %footer-styles;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-dark-theme-color;
+}
+
+.footer-email,
+.footer-tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.footer-address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.social-color {
+    color: $text-dark-theme-color;
+}
+
+/*присоединяйтесь, блок по центру*/
+.subscription {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-dark-theme-color;
+}
+
+.social-links-footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    .social-link-icon-footer {
+        @include flex-center(flex, center, center);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        background-size: 22px, contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        fill: $text-dark-theme-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}    
+
+
+.social-links-indent:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link-icon-footer:hover,
+.social-link-icon-footer:focus {
+    fill: $text-dark-theme-color;
+    background-color: $accent-color;
+}
+
+  /************************* Блок справа ************************/
+
+
+.footer-right-title {
+    box-sizing: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-dark-theme-color;
+}
+ 
+.contact-form-footer {
+    display: flex;
+
+    .contact-form-email {
+        font-family: $main-font;
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        background-color:transparent
+    }
+    .contact-form {
+        margin-top: 20px;
+        background-color: #2F303A;
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
+    }
+    .btn-form {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: none; 
+        /* outline: none; */
+        width: 200px;
+        height: 50px;
+        padding-top: 10px;  
+        padding-bottom: 10px;
+        padding-left: 32px;
+        padding-right: 28px;   
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;    
+    
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $title-dark-theme-color;
+        background-color: $accent-color; 
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        .button-icon-send {
+            margin-left: 10px;
+            width: 24px;
+            height: 24px;
+        }
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }  
+    }  
+}
+    

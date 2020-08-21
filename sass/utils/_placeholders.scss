@@ -1,0 +1,23 @@
+
+%footer-color {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+%logo-color-footer {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+}
+
+%footer-styles {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-dark-theme-color;
+}
