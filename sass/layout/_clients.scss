@@ -1,11 +1,111 @@
 /***************** Постоянные клиенты ***************/
+.clients-link {
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $social-link-color;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.clients-container {
+}
+
+.regular-clients-title {
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $social-link-color;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .clients-container {
+        justify-content: center;
+        text-align: center;
+        width: 480px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .clients {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.178;
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .regular-clients {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & .regular-clients-title {
+            width: calc((100% - 60px) / 2);
+        }
+    }
+   
+    .clients-link {
+        border: 1px solid #afb1b8;
+        box-sizing: border-box;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: $social-link-color;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            border-color: $accent-color;
+        }
+    }
+    .clients-link-svg {
+        fill: #AFB1B8;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .regular-clients-title {
+        width: 210px;
+        height: 90px;
+        border: 1px solid #AFB1B8;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .clients-container {
     justify-content: center;
     text-align: center;
     padding-top: 94px;
     padding-bottom: 94px;
-
+    }
     .clients {
         font-weight: 700;
         font-size: 36px;
@@ -19,31 +119,30 @@
         display: flex;
         justify-content: space-evenly;
     }
+    .clients-link {
+        width: 170px;
+        height: 90px;  
+    }
+    .regular-clients-title:not(:last-child) {
+        margin-right: 30px;
+    }
+    .clients {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $title-light-theme-color;
+        padding-bottom: 50px;
+    }
 }
 
-.clients-link {
-    width: 170px;
-    height: 90px;
-    border: 1px solid #afb1b8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    fill: $social-link-color;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .clients-link-svg {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &:hover,
-    &:focus {
-        fill: $accent-color;
-        border: 1px solid $accent-color;
-    }
-
+.clients-link-svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.regular-clients-title:not(:last-child) {
-    margin-right: 30px;
+&:hover,
+&:focus {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
 }

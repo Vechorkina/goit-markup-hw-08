@@ -1,35 +1,4 @@
 /*Преимущества*/ /********************* О НАС**********************/
-
-.about-us {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    
-    .about-us-list {
-        display: flex;
-        justify-content: center; 
-    }
-}
-
-.about-us-list-item:not(:last-child) {
-        margin-right: 30px;
-    }
-
-.about-us-div{
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .about-us-svg {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-
 .advantages-heading {
     font-weight: 700;
     font-size: 14px;
@@ -37,8 +6,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $title-light-theme-color;
-
-    width: 270px;
     height: 16px;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -50,7 +17,112 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:  $text-light-theme-color;
-    width: 270px;
+
 }
 
 
+
+@media screen and (max-width: 767px) {
+    .about-us-list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .about-us-div {
+        display: inline-block;
+        height: 120px;
+        background-color: #f5f4fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-us-svg {
+        width: 70px;
+        height: 70px;
+    }
+    .advantages-heading {
+        text-align: center;
+    }
+    .about-us{
+        width: 480px
+    }
+    .about-us-list {
+        padding-bottom: 60px;
+    
+    }
+    .advantages-heading-description {
+        width: 450px;
+        height: 50px;
+    }
+}
+
+
+
+
+// ПЛАНШЕТ
+@media screen and (min-width: 768px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ДЕСКТОП
+
+@media screen and (min-width: 1200px) {
+.about-us {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: block;
+    width: 1200px;
+    
+    .about-us-list {
+        display: flex;
+        justify-content: center; 
+       
+    }
+}
+
+.about-us-list-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+.about-us-div{
+    // margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+// .advantages-heading {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: $title-light-theme-color;
+
+//     width: 270px;
+//     height: 16px;
+//     margin-top: 30px;
+//     margin-bottom: 10px;
+// }
+
+
+}

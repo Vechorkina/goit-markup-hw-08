@@ -1,6 +1,42 @@
 /*********************Чем мы занимаемся********************/
+
+@media screen and (max-width: 480px) {
+.services-container {
+    display: none;
+}
+}
+@media screen and (min-width: 768px) {
+    .services-container {
+        display: none;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
 .services-container {
     padding-bottom: 94px;
+    width: 1200px;
+    display: block;
     .services {
         font-weight: bold;
         font-size: 36px;
@@ -36,4 +72,5 @@
     padding-bottom: 27px;
     top: 76.3%;
     position: absolute;
+}
 }

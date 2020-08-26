@@ -12,43 +12,55 @@
 <body>
     <!--Шапка сайта-->
     <header class="header">
-        <div class="container">
-            <nav class="navigation">
-                <a class="logo" href="./index.html">
-                    <img class="logo-img" src="./images/shapka/Web-Studio.svg" alt="логотип"></a>
+        <div class="container header-container">
+            <a class="logo" href="./index.html">
+                <img class="logo-img" src="./images/shapka/Web-Studio.svg" alt="логотип"></a>
+             
+            <button class="menu-button" type="button"  aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+                <svg width="40px" height="40px">
+                    <use  class="icon-burger" href="./images/sprite/sprite.svg#icon-menu" ></use>
+                    <use class="icon-close" href="./images/sprite/sprite.svg#close" ></use>
+                </svg>
+            </button>
+            <div class="menu-wrapper" data-menu="">
+
                 
-                <ul  class="nav-menu list">
-                    <li class="nav-list-item nav-list-item-color">
-                        <a class="nav-list-link active-page link" href="./">Студия</a>
+                <nav class="navigation">
+                    
+                    
+                    <ul  class="nav-menu list">
+                        <li class="nav-list-item nav-list-item-color ">
+                            <a class="nav-list-link active-page link " href="./">Студия</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-link link" href="portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            
+            
+                <ul class="header-address list">
+                    <li class="header-address-link-site">
+                        <a class="header-address-link link" href="mailto:info@devstudio.com">
+                            <svg class="header-address-icon" width="16px" height="12px">
+                                <use href="./images/sprite/sprite.svg#icon-konvert"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="nav-list-item">
-                        <a class="nav-list-link link" href="portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a class="nav-list-link link" href="">Контакты</a>
+                    <li class="header-address-link-site">
+                        <a class="header-address-link link" href="tel:+380961111111">
+                            <svg class="header-address-icon" width="10px" height="15px">
+                                <use href="./images/sprite/sprite.svg#icon-mobilka"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav>
-            
-            
-            <ul class="header-address list">
-                <li class="header-address-link-site">
-                    <a class="header-address-link link" href="mailto:info@devstudio.com">
-                        <svg class="header-address-icon" width="16px" height="12px">
-                            <use href="./images/sprite/sprite.svg#icon-konvert"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="header-address-link-site">
-                    <a class="header-address-link link" href="tel:+380961111111">
-                        <svg class="header-address-icon" width="10px" height="15px">
-                            <use href="./images/sprite/sprite.svg#icon-mobilka"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
 
@@ -65,13 +77,13 @@
     </section>
 
     <!--Преимущества-->
-    <section>
+     <section>
         <div class="about-us container">
             <h2 hidden>О нас</h2>
             <ul class="about-us-list list">
                 <li class="about-us-list-item">
                     <div class="about-us-div">
-                        <svg class="about-us-svg">
+                        <svg class="about-us-svg" width="70px" height="70px">
                             <use href="./images/sprite/sprite.svg#icon-antenna-1">
 
                             </use>
@@ -82,7 +94,7 @@
                 </li>
                 <li class="about-us-list-item">
                      <div class="about-us-div">
-                        <svg class="about-us-svg">
+                        <svg class="about-us-svg" width="70px" height="70px">
                             <use href="./images/sprite/sprite.svg#icon-clock-1">
 
                             </use>
@@ -93,7 +105,7 @@
                 </li>
                 <li class="about-us-list-item">
                     <div class="about-us-div">
-                        <svg class="about-us-svg">
+                        <svg class="about-us-svg" width="70px" height="70px">
                             <use href="./images/sprite/sprite.svg#icon-diagram-1">
 
                             </use>
@@ -104,7 +116,7 @@
                 </li>
                 <li class="about-us-list-item">
                      <div class="about-us-div">
-                        <svg class="about-us-svg">
+                        <svg class="about-us-svg" width="70px" height="70px">
                             <use href="./images/sprite/sprite.svg#icon-astronaut">
 
                             </use>
@@ -118,7 +130,7 @@
     </section>
 
     <!--Услуги, чем мы занимаемся-->
-    <section>
+     <section>
         <div class="services-container container">
             <h2 class="services">Чем мы занимаемся</h2>
             <ul class="services-list list">
@@ -145,7 +157,7 @@
     </section>
 
     <!--Наша команда-->
-    <section>
+     <section>
         <div class="our-team">
             <div class="staff-container container">
                 <h2 class="team">Наша команда</h2>
@@ -153,6 +165,7 @@
                       <li class="team-items"> 
                           <img class="team-foto" src="./images/komanda/kucherenko.jpg" alt="kucherenko"
                               width="270">
+                              
                           <h3 class="team-staff-name">Николай Кучеренко</h3>
                           <p class="team-staff" lang="en">Product Designer</p>
                       <ul class="social-links list">
@@ -285,7 +298,7 @@
                 </ul>
             </div>
         </div>
-    </section>  
+    </section> 
 
      <!--Постоянные клиенты-->
     <section>
@@ -341,8 +354,8 @@
     </main>
  
  
-    <!--Контакты-->
-    <footer class="footer">
+    <!-- Контакты -->
+    <!-- <footer class="footer">
         <div class="footer-container container">
             <div class="footer-left">
                 <h3 class="logo-footer"><span class="logo-color-blue">Web</span> <span class="logo-color">Studio</span> </h3>
@@ -402,8 +415,7 @@
 
             </div>
         </div>
-    </footer>
-  
+    </footer> -->
 
 
 <!-- МОДАЛНОЕ ОКНО -->
@@ -461,6 +473,7 @@
     </div>
 
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
