@@ -76,6 +76,16 @@
         box-sizing: border-box;
         border-radius: 4px;
     }
+    .regular-clients-title {
+        border: 1px solid #afb1b8;
+        box-sizing: border-box;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $social-link-color;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 
