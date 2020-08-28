@@ -21,8 +21,8 @@
         justify-content: center;
         text-align: center;
         width: 480px;
-        margin-right: auto;
-        margin-left: auto;
+        // margin-right: auto;
+        // margin-left: auto;
     }
     .clients {
     
@@ -30,6 +30,8 @@
         line-height: 1.178;
         padding-top: 60px;
         padding-bottom: 30px;
+        //         margin-right: auto;
+        // margin-left: auto;
     }
    
    .clients-link {
@@ -54,6 +56,9 @@
 
 
 @media screen and (max-width: 767px) {
+    .clients-container {
+        width: 480px;
+    }
     .regular-clients-title:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -77,10 +82,11 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .clients-container {
+        width: 768px;
         padding-top: 60px;
         padding-bottom: 60px;
-        margin-left: auto;
-        margin-right: auto;
+        // margin-left: auto;
+        // margin-right: auto;
     }
     .clients {
         font-weight: 700;
@@ -96,8 +102,8 @@
         width: 768px;
         flex-wrap: wrap;
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
+        // margin-left: auto;
+        // margin-right: auto;
     }
     .regular-clients-title {
         width: calc((100% - 60px) / 3);

@@ -4,6 +4,95 @@
     padding-top: 60px;
     padding-bottom: 60px;
     align-items: baseline;
+}
+.footer-container {
+    background-color: #2F303A;
+}
+
+
+@media screen and (max-width: 767px) {
+    .footer-container {
+        display: block;
+        width: 480px;
+        justify-content: center;
+    }
+    .footer-container,
+    .address-list {
+        text-align: center;
+    }
+    .address-list,
+    .footer-center {
+        margin-bottom: 60px;
+    }
+    .subscription,
+    .footer-right-title {
+        margin-bottom: 20px;
+    }
+    .contact-form-email {
+        width: 100%;
+    }
+    .button-icon-send  {
+        padding-right: 5px;
+    }
+    .btn-form  {
+        margin-left: auto;
+        margin-right: auto;
+        
+
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-tablet {
+        width: 768px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-left {
+        text-align: center;
+        padding-left: 76px;
+   
+    }
+    .footer-center {
+        padding-top: 5px;
+    padding-right: 89px;
+    text-align: center;
+    }
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .contact-form-email {
+        width: 358px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-form-footer {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        justify-content: center;
+    }
+    .btn-form  {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) {
 
     .footer-container{   
         display: flex; 
@@ -19,8 +108,31 @@
             margin-left: auto;
         }
     }
- 
+    .contact-form-footer {
+    display: flex;
+    }
+    .address-list  {
+        margin-right: 69px;
+        width: 231px;
+        height: 81px;
+    }
+    .social-link-icon-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-tablet {
+        display: flex;
+    }
+    .contact-form-email {
+        width: 358px;
+        height: 50px;
+    }
 }
+
+
+
+
 
 .footer-left {
     .logo-footer{
@@ -43,11 +155,7 @@
         }
 
     }
-    .address-list  {
-        margin-right: 69px;
-        width: 231px;
-        height: 81px;
-    }
+
 }
 
 
@@ -103,9 +211,7 @@
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+
         fill: $text-dark-theme-color;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -135,13 +241,11 @@
     color: $text-dark-theme-color;
 }
  
-.contact-form-footer {
-    display: flex;
 
     .contact-form-email {
         font-family: $main-font;
-        width: 358px;
-        height: 50px;
+        // width: 358px;
+        // height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-sizing: border-box;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -151,7 +255,7 @@
         padding-left: 16px;
         font-size: 16px;
         line-height: 20px;
-        display: flex;
+        // display: flex;
         align-items: center;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
@@ -179,7 +283,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;    
-    
+        justify-content: center;
         text-align: center;
         letter-spacing: 0.06em;
         color: $title-dark-theme-color;
@@ -188,15 +292,17 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 
+
         .button-icon-send {
             margin-left: 10px;
             width: 24px;
             height: 24px;
+
         }
         &:hover,
         &:focus {
             background-color: $accent-color;
         }  
     }  
-}
+
     

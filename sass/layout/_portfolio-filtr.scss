@@ -5,16 +5,12 @@
 
 
 }
-.line div {
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .line div {
+    .line-container {
         width: 480px;
     }
     .filter {
@@ -36,7 +32,7 @@
         margin-top: 60px;
         display: flex;
     }
-    .line div {
+    .line-container {
         width: 768px;
     }
 }
@@ -44,7 +40,7 @@
 
 
 @media screen and (min-width: 1200px) {
-    .line div {
+    .line-container {
         width: 1200px;
     }
 
