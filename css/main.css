@@ -473,6 +473,9 @@ img {
     align-items: center;
     top: 90%;
   }
+  .backdrop {
+    overflow-y: scroll;
+  }
   .modalform-input-wrapper {
     width: 370px;
     height: 40px;
@@ -1499,7 +1502,7 @@ img {
   fill: #AFB1B8;
 }
 
-@media screen and (max-width: 767px) {
+@media screen {
   .clients-container {
     justify-content: center;
     text-align: center;
@@ -1855,17 +1858,54 @@ img {
   background-color: #2196F3;
 }
 
-/***************П О Р Т Ф О Л И О***********************/
 .line {
   border-top: 1px solid #ECECEC;
 }
 
-.line .filter {
-  display: flex;
-  padding-top: 93px;
-  padding-bottom: 34px;
-  justify-content: center;
-  box-sizing: inherit;
+.line div {
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .line div {
+    width: 480px;
+  }
+  .filter {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    display: flex;
+  }
+  .filter-list:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    display: flex;
+  }
+  .line div {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .line div {
+    width: 1200px;
+  }
+  .filter {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 94px;
+    justify-content: center;
+    box-sizing: inherit;
+  }
 }
 
 .filter-list-item {
@@ -1906,37 +1946,89 @@ img {
 }
 
 /***************** ПРОЕКТЫ  *************************/
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 94px;
-  box-sizing: inherit;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .overlay {
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+  }
+  .overlay .our-projects-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 77px;
+    padding-bottom: 77px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    background-color: #2196F3;
+    color: #ffffff;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+  }
 }
 
-.portfolio .portfolio-img {
-  width: calc((100% - 60px) / 3);
-  justify-content: center;
-  box-sizing: border-box;
-  background-color: #FFFFFF;
-  border: 1px solid #EEEEEE;
-  display: block;
-  outline: none;
-}
-
-.portfolio .portfolio-img:not(:nth-last-child(3n + 1)) {
-  margin-right: 30px;
-}
-
-.portfolio .portfolio-img:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
-
-.portfolio .portfolio-img:hover, .portfolio .portfolio-img:focus {
-  background-color: #FFFFFF;
-  box-sizing: border-box;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-  outline: none;
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 94px;
+    box-sizing: inherit;
+  }
+  .portfolio .portfolio-img {
+    width: calc((100% - 60px) / 3);
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    display: block;
+    outline: none;
+  }
+  .portfolio .portfolio-img:not(:nth-last-child(3n + 1)) {
+    margin-right: 30px;
+  }
+  .portfolio .portfolio-img:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+  .portfolio .portfolio-img:hover, .portfolio .portfolio-img:focus {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    outline: none;
+  }
+  .overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay .our-projects-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    background-color: #2196F3;
+    color: #ffffff;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+  }
 }
 
 .projects {
@@ -1958,33 +2050,6 @@ img {
   color: #757575;
   padding-bottom: 20px;
   padding-left: 24px;
-}
-
-.overlay {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay .our-projects-description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 24px;
-  padding-right: 24px;
-  display: flex;
-  align-items: center;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  background-color: #2196F3;
-  color: #ffffff;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%);
 }
 
 .portfolio-img:hover .our-projects-description {

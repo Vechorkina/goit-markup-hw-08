@@ -64,6 +64,9 @@
         top: 90%;
 
     }
+    .backdrop {
+        overflow-y: scroll;
+    }
     .modalform-input-wrapper {
         width: 370px;
         height: 40px;   
@@ -92,6 +95,7 @@
     .modal-form {
         top: 70%;
     }
+
 }
 
 

@@ -1,60 +1,79 @@
 /***************** ПРОЕКТЫ  *************************/
 
 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 94px;
-    box-sizing: inherit;
+@media screen and (min-width: 480px) and (max-width: 767px) {
 
-    .portfolio-img {
-        width: calc((100% - 60px) / 3); 
-        justify-content: center;
-        box-sizing: border-box;
-        background-color: #FFFFFF;
-        border: 1px solid #EEEEEE;
-        display: block;
-        outline: none;
-            &:not(:nth-last-child(3n + 1)) {
-                margin-right: 30px;
-            }
-            &:not(:nth-last-child(-n + 3)) {
-                margin-bottom: 30px;
-            }
-            &:hover, &:focus {
-                background-color: #FFFFFF;
-            box-sizing: border-box;
-            box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-            outline: none;
-            }
-            
-    } 
-}
-
-.projects {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $title-light-theme-color;
-    padding-bottom: 4px;
-    padding-left: 24px;
-    padding-top: 20px;
-}
-
-.our-projects {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color:  $text-light-theme-color;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    .overlay {
+        position: relative;
+        overflow: hidden;
+        width: 450px;
+        .our-projects-description {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-top: 77px;
+            padding-bottom: 77px;
+            padding-left: 24px;
+            padding-right: 24px;
+        
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 1.56;
+            letter-spacing: 0.03em;
+        
+        
+            background-color: $accent-color; 
+            color: $text-dark-theme-color;
+        
+            transition:  transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+            transform: translateY(100%);
+        }
     }
+    
+
+}
 
 
-.overlay {
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 94px;
+        box-sizing: inherit;
+
+        .portfolio-img {
+            width: calc((100% - 60px) / 3); 
+            justify-content: center;
+            box-sizing: border-box;
+            background-color: #FFFFFF;
+            border: 1px solid #EEEEEE;
+            display: block;
+            outline: none;
+                &:not(:nth-last-child(3n + 1)) {
+                    margin-right: 30px;
+                }
+                &:not(:nth-last-child(-n + 3)) {
+                    margin-bottom: 30px;
+                }
+                &:hover, &:focus {
+                    background-color: #FFFFFF;
+                box-sizing: border-box;
+                box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+                outline: none;
+                }
+                
+        } 
+    }
+    .overlay {
     position: relative;
     overflow: hidden;
     .our-projects-description {
@@ -84,6 +103,34 @@
     }
 }
 
+}
+
+
+
+
+.projects {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-light-theme-color;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+
+.our-projects {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color:  $text-light-theme-color;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    }
+
+
+
 .portfolio-img:hover .our-projects-description{
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(0%);
@@ -104,3 +151,5 @@
 // box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 // outline: none;
 // }
+
+
