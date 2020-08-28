@@ -1,7 +1,12 @@
-@media screen and (max-width: 480px) {
+.heading {
+    margin-right: auto;
+    margin-left: auto;
+}
 
+@media screen and (max-width: 767px) {
+   
     .heading {
-        width: 480px;
+        max-width: 480px;
         height: 400px;
         margin-left: auto;
         margin-right: auto;
@@ -15,11 +20,22 @@
         background-position: center;
         background-size: cover;
         margin-bottom: 60px;
-        background-size: cover;
-        // max-width: 480px;
-        // height: 400px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .heading {
+            background-image: linear-gradient(to bottom,
+             rgba(47, 48, 58, 0.8),
+             rgba(47, 48, 58, 0.8)
+             ),  
+            url(../images/header/header.jpg); 
+        }
     }
 }
+
+
+
 
 .heading-title {
     font-weight: 900;
