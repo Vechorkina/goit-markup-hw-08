@@ -518,6 +518,7 @@ img {
   }
   .modal-form {
     width: 528px;
+    top: 70%;
     padding-top: 40px;
     padding-right: 40px;
     padding-bottom: 50px;
