@@ -19,8 +19,9 @@
 
 @media screen and (max-width: 767px) {
  .header-container {
-    max-width: 480px;
+    width: 480px;
     height: 60px;
+    position: relative;
     }
     .logo {
     z-index: 100;
@@ -45,7 +46,7 @@
           fill: $accent-color;
         }
 
-        
+
         &.is-open {
             .icon-close {
                 display: block;
