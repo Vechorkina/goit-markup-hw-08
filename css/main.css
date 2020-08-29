@@ -1675,6 +1675,10 @@ img {
   fill: #2196F3;
 }
 
+.footer {
+  background-color: #2F303A;
+}
+
 .footer-container {
   background-color: #2F303A;
   padding-top: 60px;
