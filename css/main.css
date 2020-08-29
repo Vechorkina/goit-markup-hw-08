@@ -1368,17 +1368,12 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team {
-  background-color: #F5F4FA;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .our-team-color {
   background-color: #F5F4FA;
 }
 
-.team-container {
+.team-container,
+.our-team {
   margin-left: auto;
   margin-right: auto;
 }
@@ -1445,6 +1440,10 @@ img {
   .staff-container {
     width: 480px;
     padding-bottom: 60px;
+  }
+  .our-team {
+    width: 480px;
+    background-color: #F5F4FA;
   }
   .team-items:not(:last-child) {
     margin-bottom: 30px;
