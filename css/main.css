@@ -1366,9 +1366,16 @@ img {
   background-color: #F5F4FA;
 }
 
+.our-team-color {
+  background-color: #F5F4FA;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .team-container {
   margin-left: auto;
   margin-right: auto;
+  background-color: #F5F4FA;
 }
 
 .team-items {
@@ -1429,7 +1436,7 @@ img {
   padding-bottom: 16px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .staff-container {
     width: 480px;
     padding-bottom: 60px;
