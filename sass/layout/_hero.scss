@@ -144,7 +144,7 @@
 
 @media screen and (min-width: 1200px){
     .heading-container {
-        width: 1600px;
+        min-width: 1200px;
         height: 600px;
         background-image: linear-gradient(
             to bottom,
