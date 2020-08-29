@@ -52,6 +52,7 @@
 @media screen and (max-width: 767px) {
     .heading-container {
         height: 400px;
+        width: 480px;
     }
     .heading-container {
         background-image: linear-gradient(
@@ -61,7 +62,7 @@
              ),  
             url(../images/header/hero-mob.jpg);
         margin-bottom: 60px;
-        
+
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -114,10 +115,10 @@
     //     background-position: center;
     //     background-size: cover;
     // }
-    .heading {
+    .heading-container {
         height: 400px;
     }
-    .heading {
+    .heading-container {
         background-image: linear-gradient(
             to bottom,
              rgba(47, 48, 58, 0.8),
@@ -128,7 +129,7 @@
     }
 
     @media screen and (min-resolution: 2dppx) {
-        .heading {
+        .heading-container {
           background-image: linear-gradient(
               to right,
               rgba(47, 48, 58, 0.8),
@@ -142,7 +143,7 @@
 
 
 @media screen and (min-width: 1200px){
-    .heading {
+    .heading-container {
         width: 1600px;
         height: 600px;
         background-image: linear-gradient(
@@ -166,7 +167,7 @@
             padding-top: 200px;
         }   
     }
-    .heading {
+    .heading-container {
         // width: 1600px;
         // height: 600px;
         background-image: linear-gradient(
