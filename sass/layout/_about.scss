@@ -22,9 +22,13 @@
 .about-us-svg {
     width: 70px;
     height: 70px;
+
 }
 
-
+.about-us {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media screen and (max-width: 767px) {
     // .about-us-list-item:not(:last-child) {
