@@ -426,6 +426,7 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .modal-form-title {
@@ -814,8 +815,8 @@ img {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     text-align: center;
-    transform: translateY(-100%);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(150%);
+    transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 99;
     opacity: 0;
   }
@@ -1218,6 +1219,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .about-us-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
   .about-us-div {
     display: inline-block;
     height: 120px;
@@ -1790,6 +1794,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-container {
+    width: 1200px;
     display: flex;
   }
   .footer-container .footer-center {
@@ -1985,7 +1990,7 @@ img {
   border-top: 1px solid #ECECEC;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .line-container {
     width: 480px;
   }
@@ -2063,16 +2068,24 @@ img {
 }
 
 /***************** ПРОЕКТЫ  *************************/
-@media screen and (min-width: 480px) and (max-width: 767px) {
+.img-link {
+  outline: 1px solid #EEEEEE;
+}
+
+@media screen and (max-width: 767px) {
+  .line-container {
+    width: 480px;
+  }
   .portfolio {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
   }
   .overlay {
     position: relative;
     overflow: hidden;
-    width: 450px;
-    height: 294px;
   }
   .overlay .our-projects-description {
     position: absolute;
@@ -2099,7 +2112,6 @@ img {
     justify-content: center;
     box-sizing: border-box;
     background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
     display: block;
   }
   .portfolio-img:not(:last-child) {
@@ -2108,12 +2120,16 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .line-container {
+    width: 768px;
+  }
   .portfolio {
     display: flex;
     flex-wrap: wrap;
     width: 768px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 60px;
   }
   .portfolio-img {
     width: calc((100% - 60px) / 2);
@@ -2135,8 +2151,6 @@ img {
   .overlay {
     position: relative;
     overflow: hidden;
-    width: 354px;
-    height: 294px;
   }
   .overlay .our-projects-description {
     position: absolute;
@@ -2162,20 +2176,21 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .line-container {
+    width: 1200px;
+  }
   .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 94px;
     box-sizing: inherit;
-    width: 1200px;
   }
   .portfolio .portfolio-img {
     width: calc((100% - 60px) / 3);
     justify-content: center;
     box-sizing: border-box;
     background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
     display: block;
     outline: none;
   }
@@ -2194,8 +2209,6 @@ img {
   .overlay {
     position: relative;
     overflow: hidden;
-    width: 370px;
-    height: 294px;
   }
   .overlay .our-projects-description {
     position: absolute;

@@ -31,9 +31,9 @@
 }
 
 @media screen and (max-width: 767px) {
-    // .about-us-list-item:not(:last-child) {
-    //     margin-bottom: 30px;
-    // }
+    .about-us-list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 
     .about-us-div {
         display: inline-block;
