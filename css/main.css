@@ -1088,13 +1088,10 @@ img {
 
 .heading-title {
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
-  padding-top: 118px;
   margin-bottom: 30px;
 }
 
@@ -1148,11 +1145,18 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .heading-title {
+    font-size: 26px;
+    line-height: 1.615;
+    padding-top: 118px;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .heading-container {
     height: 400px;
-  }
-  .heading-container {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header/hero-tabl.jpg);
   }
 }
@@ -1163,7 +1167,16 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .heading-title {
+    font-size: 26px;
+    line-height: 1.615;
+    padding-top: 118px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .heading-container {
     min-width: 1200px;
     height: 600px;
@@ -1171,15 +1184,10 @@ img {
   }
   .heading-container .heading-title {
     margin: 0;
-    font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 30px;
+    line-height: 1.363;
     padding-top: 200px;
+    margin-bottom: 30px;
   }
   .heading-container {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header/hero-desktop@2x.jpg);
