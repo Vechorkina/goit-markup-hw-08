@@ -37,13 +37,12 @@
     margin-left: auto;
     margin-right: auto;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }   
 
-.btn:hover,
-.btn:focus {
-    background-color: $accent-color;
-}
-
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}   
 
 
 
@@ -85,20 +84,11 @@
         }
     }
     .heading-title {
-
         font-size: 26px;
         line-height: 1.615;
         padding-top: 118px;
-        margin-bottom: 30px;
     }
 }
-
-
-
-
-
-
-
 
 
 // ТАБЛЕТ
@@ -126,11 +116,9 @@
         }
     }
     .heading-title {
-
         font-size: 26px;
         line-height: 1.615;
         padding-top: 118px;
-        margin-bottom: 30px;
     }
 }
 
@@ -149,13 +137,13 @@
             url(../images/header/hero-desktop.jpg);
 
         
-            .heading-title {
-                margin: 0;
-                font-size: 44px;
-                line-height: 1.363;
-                padding-top: 200px;
-                margin-bottom: 30px;
-            }   
+        .heading-title {
+            margin: 0;
+            font-size: 44px;
+            line-height: 1.363;
+            padding-top: 200px;
+             margin-bottom: 30px;
+        }   
     }
     .heading-container {
 
