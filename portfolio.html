@@ -13,7 +13,7 @@
     <!--Шапка сайта-->
     <!--Шапка сайта-->
     <header class="header">
-        <div class="container header-container">
+        <div class="container header-container" id="menu-wrapper">
             <a class="logo" href="./index.html">
                 <img class="logo-img" src="./images/shapka/Web-Studio.svg" alt="логотип"></a>
              
@@ -100,28 +100,30 @@
                         <div class="overlay">
 
                             <picture>
-
-                           
-    
-
-    
                                 <source srcset="
-                                ./images/images-portfolio/f1-desc.jpg 1x, 
-                                ./images/images-portfolio/f1-desc@2x.jpg 2x" 
-                                type="image/jpg"
-                                media="(min-width: 1200px)"/>
+                                                                ./images/images-portfolio/f1-desc.jpg 1x, 
+                                                                ./images/images-portfolio/f1-desc@2x.jpg 2x" type="image/jpg"
+                                    media="(min-width: 1200px)" />
 
+                                    <source srcset="
+                                                                    ./images/images-portfolio/f1-tabl.jpg 1x, 
+                                                                    ./images/images-portfolio/f1-tabl@2x.jpg 2x" media="(min-width: 768px)"
+                                        type="image/jpg" />
+                        
                                 <source srcset="
                                 ./images/images-portfolio/f1-mob.jpg 1x, 
                                 ./images/images-portfolio/f1-mob@2x.jpg 2x" 
                                 media="(max-width: 767px)" type="image/jpg"/>
 
-                                <source srcset="
-                                ./images/images-portfolio/f1-tabl.jpg 1x, 
-                                ./images/images-portfolio/f1-tabl@2x.jpg 2x"
-                                media="(min-width: 768px)" type="image/jpg"/>
+
     
-                                <img class="team-foto" src="./images/images-portfolio/f1-desc.jpg" alt="">
+                               
+    
+
+                               
+    
+                                <img class="team-foto" src="./images/images-portfolio/photo1.jpg" alt="">
+
                           </picture>
 
                             <!-- <img class="img-project"  src="./images/images-portfolio/photo1.jpg" alt="" width="354" height="294"> -->

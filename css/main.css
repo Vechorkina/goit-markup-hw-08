@@ -397,20 +397,20 @@ img {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container .container {
-    width: 480px;
+    max-width: 480px;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container .container {
     width: 768px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .container .container {
     width: 1200px;
   }
@@ -472,7 +472,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 90%;
+    top: 50%;
   }
   .backdrop {
     overflow-y: scroll;
@@ -503,7 +503,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .modal-form {
-    top: 70%;
+    top: 50%;
   }
 }
 
@@ -518,7 +518,7 @@ img {
   }
   .modal-form {
     width: 528px;
-    top: 70%;
+    top: 50%;
     padding-top: 40px;
     padding-right: 40px;
     padding-bottom: 50px;
@@ -757,9 +757,6 @@ img {
 .header {
   box-sizing: border-box;
   position: relative;
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header-container {
@@ -1124,7 +1121,6 @@ img {
 @media screen and (max-width: 767px) {
   .heading-container {
     height: 400px;
-    width: 480px;
   }
   .heading-container {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header/hero-mob.jpg);
@@ -1522,7 +1518,6 @@ img {
     text-align: center;
     justify-content: center;
     background-color: #F5F4FA;
-    display: flex;
   }
   .team-foto {
     padding-bottom: 30px;
@@ -1613,7 +1608,6 @@ img {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    width: 226px;
     height: 90px;
   }
   .regular-clients-title:nth-child(3n) {

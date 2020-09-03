@@ -63,7 +63,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 90%;
+        top: 50%;
 
     }
     .backdrop {
@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 767px) {
     .modal-form {
-        top: 70%;
+        top: 50%;
     }
 
 }
@@ -116,7 +116,7 @@
 
 .modal-form {
     width: 528px;
-    top: 70%;
+    top: 50%;
     padding-top: 40px;
     padding-right: 40px;
     padding-bottom: 50px;
