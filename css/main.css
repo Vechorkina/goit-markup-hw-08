@@ -472,7 +472,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 50%;
+    top: 60%;
   }
   .backdrop {
     overflow-y: scroll;
@@ -503,7 +503,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .modal-form {
-    top: 50%;
+    top: 70%;
   }
 }
 
